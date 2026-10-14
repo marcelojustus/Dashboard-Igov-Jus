@@ -1,0 +1,86 @@
+<style>
+.mt-body .eqb{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:1.2em 0;padding:14px 18px;background:#f4f8fc;border:1px solid var(--line);border-radius:10px;overflow-x:auto;font-family:"Cambria Math","STIX Two Math","Times New Roman",serif;font-size:17px;color:#122b40;max-width:100%}
+.eqb .x{flex:1;text-align:center;white-space:nowrap}
+.eqb .n{font-family:Inter,system-ui,sans-serif;font-size:12px;color:var(--muted);white-space:nowrap}
+.eqb .frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin:0 4px}
+.eqb .frac>span:first-child{border-bottom:1px solid currentColor;padding:0 6px 3px}
+.eqb .frac>span:last-child{padding:3px 6px 0}
+.eqb .sum{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;line-height:1.1;margin:0 4px;font-size:.8em}
+.eqb .sum b{font-size:1.9em;font-weight:400;line-height:1}
+.eqb .bar{text-decoration:overline}
+.eqb sub,.eqb sup{font-size:.7em}
+.mt-body .eqt{font-family:"Cambria Math","STIX Two Math","Times New Roman",serif;font-style:italic;white-space:nowrap}
+</style>
+
+<h2 id="mt-visao-geral">Do IPC-Jus ao iGov-Jus: visão geral</h2>
+<p>O IPC-Jus, usado pelo CNJ, é uma medida de produtividade comparada, e não de governança judicial em sentido amplo. Um tribunal pode ser produtivo e, ainda assim, apresentar fragilidades em transparência, governança tecnológica, <em>accountability</em> ou gestão. Por isso, o estudo propõe o <strong>Índice Amplo de Governança da Justiça (iGov-Jus)</strong>, uma medida sintética construída com dados públicos e replicáveis, principalmente do CNJ, que preserva o IPC-Jus como uma de suas dimensões e o articula a outras quatro.</p>
+<p>O índice cobre os 27 tribunais da Justiça Estadual e reúne cinco dimensões, todas em escala de 0 a 100, em que valores maiores indicam melhor desempenho relativo:</p>
+<div class="tbl"><table class="mt-table"><caption>Dimensões do iGov-Jus.</caption><thead><tr><th>Dimensão</th><th>O que capta</th><th>Origem / método</th></tr></thead><tbody>
+<tr><td>IPC-Jus* modificado</td><td>Eficiência técnica na baixa de processos</td><td>CNJ; DEA recalculada com a população como <em>input</em></td></tr>
+<tr><td>ITP-Jus</td><td>Transparência e <em>accountability</em></td><td>Ranking da Transparência do CNJ</td></tr>
+<tr><td>iGovTIC-JUD</td><td>Governança, gestão e infraestrutura de TIC</td><td>Levantamento do CNJ (ENTIC-JUD)</td></tr>
+<tr><td>EGAG-Jus</td><td>Acesso à justiça e gestão da demanda</td><td>Proposto no estudo; DEA</td></tr>
+<tr><td>EGFP-Jus</td><td>Gestão do fluxo processual</td><td>Proposto no estudo; DEA</td></tr>
+</tbody></table></div>
+
+<h2 id="mt-ipc-jus">IPC-Jus e IPC-Jus* modificado</h2>
+<h3 id="mt-ipc-jus-dea">Método do IPC-Jus (CNJ)</h3>
+<ul>
+<li><strong>Técnica:</strong> Análise Envoltória de Dados (DEA), que compara cada tribunal (DMU) com uma fronteira de eficiência formada pelas próprias unidades. Modelo CCR (retornos constantes à escala), orientado ao <em>output</em>.</li>
+<li><strong><em>Output</em>:</strong> total de processos baixados.</li>
+<li><strong><em>Inputs</em>:</strong> despesa total (sem pessoal inativo e obras) e pessoal (magistrados e servidores). Os pendentes líquidos entram como variável exógena, sem suspensos, sobrestados, arquivados provisoriamente, execuções fiscais e penais.</li>
+<li><strong>Resultado:</strong> escore de 0% a 100%; quanto mais próximo de 100, mais perto da fronteira.</li>
+</ul>
+<h3 id="mt-ipc-jus-limites">Limitações e a regra de dimensionamento</h3>
+<p>Com apenas 27 DMUs, o poder discriminatório da DEA é limitado: quanto mais variáveis em relação ao número de unidades, maior o risco de classificar tribunais como eficientes apenas pela estrutura do modelo. A literatura recomenda que o número de DMUs (<i>n</i>) seja pelo menos igual ao maior valor entre o produto de <i>inputs</i> (<i>m</i>) por <i>outputs</i> (<i>s</i>) e três vezes a soma de ambos:</p>
+<div class="eqb"><div class="x"><i>n</i> ≥ max{ <i>m</i> × <i>s</i> , 3(<i>m</i> + <i>s</i>) }</div><div class="n">(1)</div></div>
+<p>Trata-se de um critério prático, e não de uma condição matemática absoluta.</p>
+<h3 id="mt-ipc-jus-pop">A modificação: população como <em>input</em></h3>
+<p>Tribunais de estados mais populosos têm, naturalmente, mais demanda, estrutura e despesa. Para controlar essa heterogeneidade, o estudo acrescenta ao modelo do CNJ a população (SIDRA/IBGE), usada como <em>proxy</em> da demanda potencial. O resultado é o <strong>IPC-Jus* modificado</strong>. A modificação não torna o indicador uma medida definitiva de produtividade: ele continua dependente da escolha de variáveis, da qualidade dos dados e do número reduzido de unidades.</p>
+
+<h2 id="mt-dimensoes">As quatro dimensões complementares</h2>
+<h3 id="mt-itp">ITP-Jus: transparência</h3>
+<p>Corresponde à pontuação do Ranking da Transparência do Poder Judiciário (CNJ). A edição de 2026 tem 83 itens em onze temas, e a pontuação é o percentual de atendimento aos itens aplicáveis a cada órgão. Mede a conformidade com requisitos de transparência ativa, não a qualidade substantiva da governança. Como os critérios mudam a cada edição, as comparações no tempo exigem cautela.</p>
+<h3 id="mt-igovtic">iGovTIC-JUD: governança de TIC</h3>
+<p>Mede a maturidade em TIC dos órgãos. A nota da área de TIC (NF-TIC) é a média simples de oito temas, cada um calculado pela média ponderada das notas das perguntas (0 a 100). A nota da área de negócio (NF-AN) é a média ponderada de suas perguntas. A nota final combina as duas:</p>
+<div class="eqb"><div class="x">iGovTIC-JUD = (NF-TIC × 0,9) + (NF-AN × 0,1)</div><div class="n">(2)</div></div>
+<p>As faixas de maturidade são: Baixo (de 0 a menos de 40), Satisfatório (de 40 a menos de 70), Aprimorado (de 70 a menos de 90) e Excelência (de 90 a 100). Itens que dependem de evidência recebem zero quando a documentação não comprova a resposta declarada.</p>
+<h3 id="mt-egag">EGAG-Jus: acesso à justiça e gestão da demanda</h3>
+<ul>
+<li><strong>Método:</strong> DEA, modelo CCR orientado ao <em>output</em>, com 27 DMUs.</li>
+<li><strong><em>Output</em>:</strong> processos com assistência gratuita por 100 mil habitantes.</li>
+<li><strong><em>Inputs</em>:</strong> proporção das despesas com assistência gratuita na despesa total; razão entre magistrados e servidores e o número de varas e juizados especiais; força de trabalho auxiliar; PIB <em>per capita</em> da unidade federativa (variável contextual).</li>
+<li><strong>Dados faltantes:</strong> sete tribunais (TJAC, TJAL, TJES, TJMT, TJPB, TJPI e TJRO) não tinham informações sobre gratuidade e receberam imputação pela média do respectivo porte, o que reduz a variabilidade e pode deslocar unidades em relação à fronteira.</li>
+<li><strong>Interpretação:</strong> escore 100 indica tribunal na fronteira. Não mede o cumprimento do direito de acesso à justiça, e sim uma eficiência relativa exploratória.</li>
+</ul>
+<h3 id="mt-egfp">EGFP-Jus: gestão do fluxo processual</h3>
+<p>Também usa DEA CCR orientada ao <em>output</em>, com dois <em>outputs</em> e quatro <em>inputs</em>. Como a taxa de congestionamento e o tempo de tramitação são resultados indesejáveis (valores maiores são piores), foram transformados para que valores maiores signifiquem melhor desempenho. Com a taxa de congestionamento líquida (TCL) expressa entre 0 e 1:</p>
+<div class="eqb"><div class="x"><i>descongestionamento</i> = 1 − <i>TCL</i></div><div class="n">(3)</div></div>
+<div class="eqb"><div class="x"><i>Celeridade</i> = <span class="frac"><span>1</span><span><i>tempo médio de duração dos processos baixados</i></span></span></div><div class="n">(4)</div></div>
+<p>A transformação em (4) exige tempos estritamente positivos. Os <em>inputs</em> são a participação das despesas com assistência judiciária gratuita na despesa total, a disponibilidade de pessoal por unidade judicial e as recorribilidades interna e externa, tratadas como pressões processuais mantidas constantes pelo modelo. Com 27 DMUs, quatro <em>inputs</em> e dois <em>outputs</em>, a regra (1) exige no mínimo 18 unidades, já que o maior valor entre 4 × 2 = 8 e 3 × (4 + 2) = 18 é 18; a especificação a atende.</p>
+
+<h2 id="mt-agregacao">Agregação: o iGov-Jus</h2>
+<p>Na formulação básica, o iGov-Jus é a média aritmética simples das cinco dimensões. Para o tribunal <i>i</i> no ano <i>t</i>:</p>
+<div class="eqb"><div class="x">iGov-Jus<sub><i>it</i></sub> = <span class="frac"><span>IPC-Jus*<sub><i>it</i></sub> + ITP-Jus<sub><i>it</i></sub> + iGovTIC-JUD<sub><i>it</i></sub> + EGAG-Jus<sub><i>it</i></sub> + EGFP-Jus<sub><i>it</i></sub></span><span>5</span></span></div><div class="n">(5)</div></div>
+<p>com 0 ≤ iGov-Jus<sub><i>it</i></sub> ≤ 100. Equivalentemente, como soma ponderada com pesos iguais:</p>
+<div class="eqb"><div class="x">iGov-Jus<sub><i>it</i></sub> = <span class="sum"><span>5</span><b>∑</b><span><i>d</i> = 1</span></span> <i>w</i><sub><i>d</i></sub> <i>I</i><sub><i>d</i>,<i>it</i></sub> , &nbsp; <i>w</i><sub><i>d</i></sub> = 0,20 &nbsp; e &nbsp; <span class="sum"><span>5</span><b>∑</b><span><i>d</i> = 1</span></span> <i>w</i><sub><i>d</i></sub> = 1</div><div class="n">(6)</div></div>
+<p>em que <i>I</i><sub><i>d</i>,<i>it</i></sub> é o escore do tribunal <i>i</i>, no ano <i>t</i>, na dimensão <i>d</i>. A média simples é transparente e fácil de reproduzir, mas pressupõe igual relevância das dimensões e admite compensação total entre elas. Além disso, pesos nominais iguais não garantem influência empírica igual: dimensões mais dispersas diferenciam mais os tribunais, e as concentradas no topo (como o ITP-Jus) pesam menos na prática.</p>
+<p>Também é calculada uma versão padronizada (escore <i>z</i>), aplicada ao índice agregado e não a cada componente:</p>
+<div class="eqb"><div class="x"><i>Z</i>(iGov-Jus)<sub><i>it</i></sub> = <span class="frac"><span>iGov-Jus<sub><i>it</i></sub> − <span class="bar">iGov-Jus</span><sub><i>t</i></sub></span><span><i>s</i><sub><i>t</i></sub></span></span></div><div class="n">(7)</div></div>
+<p>em que <span class="bar eqt">iGov-Jus</span><sub><i>t</i></sub> é a média do índice entre os <i>N</i> tribunais no ano <i>t</i> e <i>s</i><sub><i>t</i></sub> é o respectivo desvio-padrão. A transformação é linear e não altera a ordenação dos tribunais. Como é calculada ano a ano, o escore <i>z</i> não deve ser usado sozinho para avaliar melhora ou piora absoluta ao longo do tempo.</p>
+
+<h2 id="mt-validacao">Avaliação exploratória do índice</h2>
+<p>A proposta é avaliada de forma exploratória, sem pretensão de validação definitiva, por meio de três procedimentos:</p>
+<ul>
+<li><strong>Matriz de correlação (Pearson)</strong> entre as cinco dimensões. Correlações baixas ou moderadas são compatíveis com a hipótese de que as dimensões captam aspectos complementares; correlações muito altas indicariam redundância. A magnitude das correlações não é, isoladamente, um teste de robustez.</li>
+<li><strong>Curvas de densidade dos escores padronizados (z)</strong>, para comparar o formato das distribuições de cada dimensão e do índice agregado.</li>
+<li><strong>Comparação de rankings</strong> entre o IPC-Jus original e o iGov-Jus, medida pela diferença entre as posições (valores positivos indicam ganho de posições), para verificar se o índice agregado reproduz ou reclassifica a ordenação por eficiência produtiva.</li>
+</ul>
+
+<h2 id="mt-limites">Cautelas de interpretação</h2>
+<ul>
+<li>Os indicadores de eficiência (IPC-Jus*, EGAG-Jus e EGFP-Jus) são relativos à amostra de 27 tribunais: escore 100 significa estar na fronteira estimada, não ter desempenho ideal.</li>
+<li>ITP-Jus e iGovTIC-JUD derivam em grande parte de checklists de conformidade preenchidos pelos próprios tribunais e podem refletir conformidade formal.</li>
+<li>Os resultados dependem da seleção de variáveis, das transformações aplicadas e da qualidade dos dados administrativos, e não permitem atribuição causal.</li>
+<li>O iGov-Jus é uma proposta metodológica aberta a análises de sensibilidade, a formas alternativas de ponderação e agregação e à incorporação de novas dimensões.</li>
+</ul>
