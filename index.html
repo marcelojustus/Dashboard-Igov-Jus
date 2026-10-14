@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard de indicadores de governança da Justiça Estadual brasileira.">
+  <title>Governança da Justiça Estadual</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<header class="topbar"><div class="mark">GJ</div><div><h1>Governança da Justiça Estadual</h1><p>Indicadores, desempenho e comparação entre tribunais</p></div></header>
+<nav id="tabs" class="tabs" aria-label="Seções do dashboard">
+  <button class="tab active" data-view="rankings">Rankings</button><button class="tab" data-view="series">Séries temporais</button><button class="tab" data-view="correlations">Correlações</button><button class="tab" data-view="scatter">Dispersão</button><button class="tab" data-view="compare">Comparação de índices</button><button class="tab" data-view="map">Mapa</button><button class="tab" data-view="distribution">Distribuição</button><button class="tab" data-view="data">Dados</button>
+</nav>
+<main>
+  <div id="loading" class="status">Carregando dados do dashboard…</div><div id="error" class="status error hidden"></div>
+  <section id="view-rankings" class="view active"><aside class="panel controls"><label>Indicador<select id="rk_ind"></select></label><label>Ano<select id="rk_ano"></select></label><label class="check"><input id="rk_z" type="checkbox"> Exibir em z-score</label><p class="note">ITP-Jus, iGovTIC-JUD, EGAG-Jus, EGFP-Jus e iGov-Jus estão disponíveis apenas para 2024.</p><p class="note">* Diferentemente do CNJ, este estudo inclui o tamanho da população como input no modelo DEA.</p></aside><div class="panel"><div id="p_rank" class="plot tall"></div></div></section>
+  <section id="view-series" class="view"><aside class="panel controls"><label>Variável<select id="sr_var"></select></label><fieldset><legend>Porte do tribunal</legend><label class="check"><input type="checkbox" name="sr_porte" value="Grande" checked> Grande</label><label class="check"><input type="checkbox" name="sr_porte" value="Médio"> Médio</label><label class="check"><input type="checkbox" name="sr_porte" value="Pequeno"> Pequeno</label></fieldset><label>Tribunais<select id="sr_siglas" multiple size="7"></select></label><label class="check"><input id="sr_smooth" type="checkbox"> Suavizar tendência (média móvel)</label><p class="note">Processos: excluídos suspensos, execuções fiscais e penais. Despesas deflacionadas pelo IPCA (base 2024).</p></aside><div class="panel"><div id="p_serie" class="plot"></div></div></section>
+  <section id="view-correlations" class="view"><aside class="panel controls"><label>Conjunto de variáveis<select id="co_set"><option value="ipc">IPC-Jus (variáveis originais)</option><option value="igov">iGov-Jus (componentes, 2024)</option></select></label><label>Ano<select id="co_ano"></select></label><p class="note">Coeficiente de correlação linear de Pearson.</p><p class="note">* O IPC-Jus modificado inclui população como input no modelo DEA.</p></aside><div class="panel"><div id="p_corr" class="plot"></div></div></section>
+  <section id="view-scatter" class="view"><aside class="panel controls"><label>Eixo X<select id="sc_x"></select></label><label>Eixo Y<select id="sc_y"></select></label><label>Tamanho dos pontos<select id="sc_size"></select></label><label>Ano<select id="sc_ano"></select></label><label class="check"><input id="sc_lm" type="checkbox" checked> Reta de ajuste linear e R²</label><p class="note">* O IPC-Jus modificado inclui população como input no modelo DEA.</p></aside><div class="panel"><div id="p_disp" class="plot"></div></div></section>
+  <section id="view-compare" class="view"><aside class="panel controls"><label>Índice 1<select id="df_a"></select></label><label>Índice 2<select id="df_b"></select></label><p class="note">Tribunais ordenados pelo Índice 1 (melhor no topo). Entre parênteses, a posição de cada tribunal em 2024 no Índice 1 e no Índice 2, respectivamente.</p></aside><div class="panel"><div id="p_dif" class="plot tall"></div></div></section>
+  <section id="view-map" class="view"><aside class="panel controls"><label>Cor dos estados<select id="mp_fill"></select></label><label>Bolhas<select id="mp_bol"></select></label><label>Ano<select id="mp_ano"></select></label><p class="note">Estados sem dado aparecem em cinza.</p></aside><div class="panel"><div id="p_mapa" class="map"></div><p id="map-legend" class="note"></p></div></section>
+  <section id="view-distribution" class="view"><aside class="panel controls"><fieldset><legend>Indicadores (z-score, 2024)</legend><div id="de_ind" class="checks"></div></fieldset><p class="note">A linha tracejada vermelha é a normal teórica N(0,1).</p></aside><div class="panel"><div id="p_dens" class="plot"></div></div></section>
+  <section id="view-data" class="view"><aside class="panel controls"><label>Ano<select id="tb_ano"></select></label><button id="tb_dl" class="primary">Baixar CSV</button><label>Pesquisar na tabela<input id="tb_search" type="search" placeholder="UF, tribunal, indicador…"></label></aside><div class="panel table-wrap"><p id="tb_meta" class="note"></p><div id="tb" class="table-scroll"></div></div></section>
+</main>
+<footer>Projeto Igov · Dashboard de governança da Justiça Estadual · <span id="footer-count"></span></footer>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js?v=8"></script>
+</body></html>
