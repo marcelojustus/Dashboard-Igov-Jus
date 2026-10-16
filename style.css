@@ -46,3 +46,7 @@ button.linkbtn:hover{text-decoration:underline}
 .tlist{max-height:230px;overflow:auto;border:1px solid #cbd6e2;border-radius:8px;padding:8px 10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:6px 8px;background:#fff}
 .tlist label.check{font-size:13px;font-weight:500}
 @media(max-width:850px){.controls .tsel{grid-column:1/-1}}
+
+
+/* Fonte abaixo dos gráficos */
+.plotcol{min-width:0}.fonte-grafico{margin:10px 0 0 4px;font-size:12px;line-height:1.5;color:var(--muted);text-align:left}.fonte-grafico a{color:var(--blue)}.fonte-grafico a:hover{text-decoration:underline}
