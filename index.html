@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-view="intro">Painel iGov-Jus – Índice Amplo de Governança da Justiça</title>
-  <meta name="description" content="Painel iGov-Jus: Índice Amplo de Governança da Justiça. Rankings, séries temporais, mapa e dados de produtividade, transparência, governança de TIC e eficiência dos 27 Tribunais de Justiça estaduais (primeira etapa).">
-  <meta name="keywords" content="iGov-Jus, governança da justiça, governança judicial, Justiça Estadual, tribunais de justiça, IPC-Jus, CNJ, eficiência do Judiciário, transparência do Judiciário">
+  <meta name="description" content="Painel iGov-Jus (igovjus): Índice Amplo de Governança da Justiça. Rankings, séries temporais, mapa e dados de produtividade, transparência, governança de TIC e eficiência dos 27 Tribunais de Justiça estaduais (primeira etapa).">
+  <meta name="keywords" content="iGov-Jus, igovjus, iGov Jus, igov jus, governança da justiça, governança judicial, Justiça Estadual, tribunais de justiça, IPC-Jus, CNJ, eficiência do Judiciário, transparência do Judiciário">
   <meta name="author" content="Marcelo Justus, Luciano Benetti Timm, Bernardo Geraldini, Luis Felipe de Souza Rodrigues">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://marcelojustus.github.io/painel.iGov-Jus/">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
- 
+
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Painel iGov-Jus">
@@ -20,19 +20,19 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Painel iGov-Jus – Índice Amplo de Governança da Justiça">
   <meta name="twitter:description" content="Indicadores de governança da Justiça Estadual brasileira: produtividade, transparência, governança de TIC e eficiência dos tribunais.">
- 
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Painel iGov-Jus",
-    "alternateName": "Índice Amplo de Governança da Justiça",
+    "alternateName": ["Índice Amplo de Governança da Justiça", "igovjus", "iGov Jus"],
     "url": "https://marcelojustus.github.io/painel.iGov-Jus/",
     "inLanguage": "pt-BR",
     "description": "Painel interativo com indicadores de governança da Justiça Estadual brasileira (primeira etapa do projeto iGov-Jus)."
   }
   </script>
- 
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="style.css?v=11">
 </head>
@@ -120,7 +120,7 @@
   <section id="view-map" class="view"><aside class="panel controls"><label>Cor dos estados<select id="mp_fill"></select></label><label>Bolhas<select id="mp_bol"></select></label><label>Ano<select id="mp_ano"></select></label><p class="note">Estados sem dado aparecem em cinza.</p></aside><div class="plotcol"><div class="panel"><div id="p_mapa" class="map"></div><p id="map-legend" class="note"></p></div><p class="fonte-grafico">Fonte: <a href="https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/" target="_blank" rel="noopener">CNJ (2025), Justiça em números 2025.</a></p></div></section>
   <section id="view-distribution" class="view"><aside class="panel controls"><fieldset><legend>Indicadores (z-score, 2024)</legend><div id="de_ind" class="checks"></div></fieldset><p class="note">A linha tracejada vermelha é a normal teórica N(0,1).</p></aside><div class="plotcol"><div class="panel"><div id="p_dens" class="plot"></div></div><p class="fonte-grafico">Fonte: <a href="https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/" target="_blank" rel="noopener">CNJ (2025), Justiça em números 2025.</a></p></div></section>
   <section id="view-data" class="view"><aside class="panel controls"><label>Ano<select id="tb_ano"></select></label><button id="tb_dl" class="primary">Baixar CSV</button><label>Pesquisar na tabela<input id="tb_search" type="search" placeholder="UF, tribunal, indicador…"></label></aside><div class="panel table-wrap"><p id="tb_meta" class="note"></p><div id="tb" class="table-scroll"></div></div></section>
- 
+
   <section id="view-team" class="view">
     <article class="panel intro team">
       <header class="intro-head">
@@ -139,5 +139,3 @@
 <footer>Painel iGov-Jus - Índice Amplo de Governança da Justiça · Primeira etapa: Justiça Estadual · <span id="footer-count"></span><br><small>“ITP-Jus” é uma abreviação adotada neste estudo para a pontuação do Ranking da Transparência do Poder Judiciário, do CNJ; não se trata de um índice oficial do CNJ.</small></footer>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js?v=16"></script>
 </body></html>
- 
-Claude terminou a resposta
