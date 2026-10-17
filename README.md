@@ -134,6 +134,14 @@ A lista completa de referências encontra-se na seção de Metodologia do painel
 
 ---
 
+## Participe
+
+O Painel iGov-Jus é um projeto em constante aprimoramento e recebe com interesse contribuições e comentários da comunidade. Seja você pesquisador, magistrado, servidor de tribunal, gestor público ou profissional que atua com governança, transparência e eficiência do sistema de justiça, sua colaboração é muito bem-vinda para o desenvolvimento de indicadores mais consistentes e úteis à sociedade.
+
+Sinta-se à vontade para explorar o painel, consultar a seção de Metodologia, sugerir melhorias, apontar inconsistências nos dados ou propor novas dimensões de análise. As contribuições podem ser enviadas por meio das *issues* do repositório ou pelos canais de contato indicados neste documento.
+
+Agradecemos o seu interesse no iGov-Jus. Juntos, podemos fortalecer a governança do Poder Judiciário e ampliar a transparência e a qualidade da prestação jurisdicional no Brasil.
+
 ## Licença
 
 [Painel iGov-Jus: Índice Amplo de Governança da Justiça](https://marcelojustus.github.io/painel.iGov-Jus/) © 2026 por [Marcelo Justus](https://www.marcelojustus.com/) está licenciado sob [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
