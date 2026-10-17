@@ -134,4 +134,12 @@ A lista completa de referências encontra-se na seção de Metodologia do painel
 
 ---
 
-## Contato
+## Licença
+
+[Painel iGov-Jus: Índice Amplo de Governança da Justiça](https://marcelojustus.github.io/painel.iGov-Jus/) © 2026 por [Marcelo Justus](https://www.marcelojustus.com/) está licenciado sob [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+ 
+<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>
+ 
+Em termos gerais, a licença permite copiar e redistribuir o material em qualquer meio ou formato, desde que (i) seja dado o devido crédito, (ii) não haja uso comercial e (iii) o material **não seja modificado ou adaptado** para distribuição.
+ 
+**Dados de terceiros.** A licença abrange apenas a criação original do projeto (índices EGAG-Jus e EGFP-Jus, visualizações, textos e base derivada). Os dados originais do *Justiça em Números* pertencem ao CNJ e seguem as condições de uso estabelecidas por esse órgão.
