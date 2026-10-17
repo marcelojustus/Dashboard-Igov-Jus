@@ -107,6 +107,8 @@ O painel é uma página estática, acessível diretamente pelo navegador, sem ne
 
 > Os gráficos, o mapa e as tabelas interativas exigem **JavaScript habilitado**.
 
+Navegação em dispositivos com tela sensível ao toque, como celulares e tablets, basta arrastar a tela para o lado para alternar entre as páginas do painel.
+
 ## Como citar
 
 Sugestão de citação:
